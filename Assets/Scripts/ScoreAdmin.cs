@@ -23,6 +23,7 @@ public class ScoreAdmin: MonoBehaviour
             Right.Invoke();
         }
         else if (other.CompareTag("Player")){}
+        else if (other.CompareTag("Untagged")){}
         else
         {
             ScoreManager.instance.RemovePoint();

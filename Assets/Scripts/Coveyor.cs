@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class Coveyor : MonoBehaviour
 {
+    //back Z POSITIVO, down, forward, left X POSITIVO
     public float speed;
     Rigidbody rBody;
+    Transform trans;
+
     void Start()
     {
+        trans = GetComponent<Transform>();
         rBody = GetComponent<Rigidbody>();
     }
-
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Vector3 pos = rBody.position;
-        rBody.position += Vector3.back * speed * Time.fixedDeltaTime;
+        rBody.position += trans.right * speed * Time.fixedDeltaTime;
         rBody.MovePosition(pos);
     }
 }

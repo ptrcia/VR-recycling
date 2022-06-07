@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
 {
     public ScoreManager scoreManager;
     public float timer = 0;
+    public float minNumber;
     public Text textTimer;
     public UnityEvent Fail;
     public UnityEvent Win;
@@ -18,13 +19,13 @@ public class Timer : MonoBehaviour
         timer -= Time.deltaTime;
         textTimer.text = "TIME LEFT: " + timer.ToString("f1");
 
-        if (timer < 0 && scoreManager.number < 4) //a falta de concretar
+        if (timer < 0 && scoreManager.number < minNumber) //a falta de concretar
         {
             timer = 0;
             Time.timeScale = 0;
             Fail.Invoke();
         }
-        else if (timer < 0 && scoreManager.number > 4)
+        else if (timer < 0 && scoreManager.number > minNumber)
         {
             timer = 0;
             Time.timeScale = 0;

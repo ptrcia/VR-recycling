@@ -62,12 +62,15 @@
     <Compile Include="Assets\Scripts\ScoreAdmin.cs" />
     <Compile Include="Assets\Scripts\Respawn.cs" />
     <Compile Include="Assets\Scripts\Destroy.cs" />
+    <Compile Include="Assets\Scripts\Coveyor.cs" />
     <Compile Include="Assets\Scripts\OnColision.cs" />
     <Compile Include="Assets\Scripts\RespawnObject.cs" />
     <Compile Include="Assets\Scripts\RespawnScene.cs" />
     <Compile Include="Assets\Scripts\MenuManager.cs" />
     <Compile Include="Assets\Scripts\WaitForSeconds.cs" />
-    <Compile Include="Assets\Scripts\Coveyor.cs" />
+    <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\Hand.cs" />
+    <Compile Include="Assets\Scripts\HandController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
