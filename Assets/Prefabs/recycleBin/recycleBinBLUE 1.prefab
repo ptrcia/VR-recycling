@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1600330646}
   - component: {fileID: 1600330645}
   m_Layer: 0
-  m_Name: BlueTAG
-  m_TagString: Blue
+  m_Name: PaperTAG
+  m_TagString: Paper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

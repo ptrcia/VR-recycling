@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 2114559866}
   - component: {fileID: 2114559865}
   m_Layer: 0
-  m_Name: YellowTAG
-  m_TagString: Yellow
+  m_Name: PlasticTAG
+  m_TagString: Plastic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

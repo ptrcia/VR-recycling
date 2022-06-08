@@ -9,6 +9,10 @@ TagManager:
   - Blue
   - Floor
   - Destroy
+  - Organic
+  - Plastic
+  - Paper
+  - Glass
   layers:
   - Default
   - TransparentFX

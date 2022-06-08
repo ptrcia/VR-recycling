@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 9192693498378590381}
-  Tag: Blue
+  Tag: Paper
   Right:
     m_PersistentCalls:
       m_Calls:

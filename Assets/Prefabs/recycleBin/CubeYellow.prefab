@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 5128567427725256084}
-  Tag: Yellow
+  Tag: Plastic
   Right:
     m_PersistentCalls:
       m_Calls:
