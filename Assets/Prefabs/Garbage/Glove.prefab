@@ -11,10 +11,16 @@ GameObject:
   - component: {fileID: 5089926991840673228}
   - component: {fileID: 8146121348848743017}
   - component: {fileID: 6262292102702040739}
-  - component: {fileID: 8741426740279438038}
   - component: {fileID: 1542188094493482319}
   - component: {fileID: 3034427910032005588}
   - component: {fileID: 3190353943059689831}
+  - component: {fileID: 2455320675596164795}
+  - component: {fileID: 6477243379946097368}
+  - component: {fileID: 2429299921584312018}
+  - component: {fileID: 4380983464423237309}
+  - component: {fileID: 2381329922718288806}
+  - component: {fileID: 5053128976607719453}
+  - component: {fileID: 7708777001299293874}
   m_Layer: 0
   m_Name: Glove
   m_TagString: Blue
@@ -85,19 +91,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8741426740279438038
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5613979984292325238}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.10737352, y: 0.05259227, z: 0.0038744784}
-  m_Center: {x: -0.031066645, y: -0.004852955, z: 0.0013796702}
 --- !u!54 &1542188094493482319
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -242,49 +235,100 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 5089926991840673228}
+  RightLight: {fileID: 1030333554226235246, guid: 183fb225e927a4743a169239c1d2ee3e, type: 3}
+  WrongLight: {fileID: 5667537243571328806, guid: e5999380a43f2a844a28ed2179c3f1be, type: 3}
+  NeutralLight: {fileID: 2164973671459122623, guid: 96fbd429767f1394cbb786e8117143d0, type: 3}
   Tag: Organic
-  Right:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  Wrong:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  Neutral:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+--- !u!65 &2455320675596164795
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5613979984292325238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02456179, y: 0.051256377, z: 0.0038744786}
+  m_Center: {x: -0.02565414, y: -0.004185014, z: 0.0013796702}
+--- !u!65 &6477243379946097368
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5613979984292325238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.023749968, y: 0.03510425, z: 0.0038744786}
+  m_Center: {x: -0.0006211248, y: -0.0076461826, z: 0.0013796702}
+--- !u!65 &2429299921584312018
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5613979984292325238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.022667458, y: 0.023081219, z: 0.0038744786}
+  m_Center: {x: -0.04960451, y: 0.006137781, z: 0.0013796702}
+--- !u!65 &4380983464423237309
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5613979984292325238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.014278205, y: 0.010693874, z: 0.0038744786}
+  m_Center: {x: -0.068413064, y: 0.0043161074, z: 0.0013796702}
+--- !u!65 &2381329922718288806
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5613979984292325238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.023749972, y: 0.010329544, z: 0.0038744786}
+  m_Center: {x: -0.072878405, y: -0.0042457376, z: 0.0013796703}
+--- !u!136 &5053128976607719453
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5613979984292325238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.0030493424
+  m_Height: 0.055900063
+  m_Direction: 1
+  m_Center: {x: -0.028814891, y: -0.0053441646, z: 0.0011994208}
+--- !u!136 &7708777001299293874
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5613979984292325238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.0027502666
+  m_Height: 0.09664292
+  m_Direction: 0
+  m_Center: {x: -0.0369206, y: -0.0037114609, z: 0.00093594624}
