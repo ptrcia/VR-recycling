@@ -9,6 +9,10 @@ public class Coveyor : MonoBehaviour
     Rigidbody rBody;
     Transform trans;
 
+    public float ScrollX = 0.5f;
+    public float ScrollY = 0.5f;
+
+
     void Start()
     {
         trans = GetComponent<Transform>();
@@ -20,4 +24,12 @@ public class Coveyor : MonoBehaviour
         rBody.position += trans.right * speed * Time.fixedDeltaTime;
         rBody.MovePosition(pos);
     }
+
+    void Update()
+    {
+        float OffsetX = Time.time * ScrollX;
+        float OffsetY = Time.time * ScrollY;
+        GetComponent<Renderer>().material.mainTextureOffset = new Vector2(OffsetX, OffsetY);
+    }
 }
+
