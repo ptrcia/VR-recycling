@@ -8,9 +8,9 @@ using UnityEngine.UI;
 public class ScoreAdmin: MonoBehaviour
 {
     [SerializeField] private Transform Object;
-    public GameObject RightLight;
-    public GameObject WrongLight;
-    public GameObject NeutralLight;
+    //public GameObject RightLight;
+    //public GameObject WrongLight;
+    //public GameObject NeutralLight;
 
     public string Tag;
     //public string Tag2;
@@ -19,6 +19,10 @@ public class ScoreAdmin: MonoBehaviour
     //public UnityEvent Wrong;
     //public UnityEvent Neutral;
 
+    /*private void Start()
+    {
+        RightLight = GameObject.FindWithTag("RightLight");
+    }*/
 
     void OnTriggerEnter(Collider other)
     {
@@ -26,7 +30,7 @@ public class ScoreAdmin: MonoBehaviour
         {
             ScoreManager.instance.AddPoint();
             //Right.Invoke();
-            Right2();
+            //Right2();
         }
         else if (other.CompareTag("Player")){}
         else if (other.CompareTag("Untagged")){}
@@ -35,14 +39,16 @@ public class ScoreAdmin: MonoBehaviour
             //else if (Object.CompareTag(Tag2)==(other.CompareTag(Tag)){Neutral.Invoke();}
             ScoreManager.instance.RemovePoint();
             //Wrong.Invoke();
-            Wrong2();
+            //Wrong2();
 
         }
     }
 
-    private void Right2()
+   /* private void Right2()
     {
+        //RightLight = GameObject.Find("Right Light");
         RightLight.SetActive(true);
+
     }
     private void Wrong2()
     {
@@ -51,6 +57,6 @@ public class ScoreAdmin: MonoBehaviour
     private void Neutral2()
     {
         NeutralLight.SetActive(true);
-    }
+    }*/
 }
 

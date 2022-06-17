@@ -13,6 +13,7 @@ TagManager:
   - Plastic
   - Paper
   - Glass
+  - RightLight
   layers:
   - Default
   - TransparentFX

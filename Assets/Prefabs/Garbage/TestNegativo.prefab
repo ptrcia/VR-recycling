@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 7023634064294126510}
   m_Layer: 0
   m_Name: TestNegativo
-  m_TagString: Green
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -426,9 +426,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 6393723711375147701}
-  RightLight: {fileID: 1030333554226235246, guid: 183fb225e927a4743a169239c1d2ee3e, type: 3}
-  WrongLight: {fileID: 5667537243571328806, guid: e5999380a43f2a844a28ed2179c3f1be, type: 3}
-  NeutralLight: {fileID: 2164973671459122623, guid: 96fbd429767f1394cbb786e8117143d0, type: 3}
   Tag: Organic
 --- !u!1 &6106260035661027130
 GameObject:

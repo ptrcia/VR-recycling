@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
@@ -11,6 +12,10 @@ public class ScoreManager : MonoBehaviour
     public PointsBar pointsBar;
     public int maxPoints;
     public int number=0;
+
+    public UnityEvent Right;
+    public UnityEvent Wrong;
+    //public UnityEvent Neutral;
 
     private void Awake()
     {
@@ -25,14 +30,19 @@ public class ScoreManager : MonoBehaviour
     public void AddPoint()
     {
         number += 1;
+        Right.Invoke();
+
         numberText.text = "Garbage Recycled: " + number.ToString();
         pointsBar.SetPoints(number);
     }
     public void RemovePoint()
     {
         number -= 1;
+        Wrong.Invoke();
         numberText.text = "Garbage Recycled: " + number.ToString();
         pointsBar.SetPoints(number);
+
     }
+
 }
 

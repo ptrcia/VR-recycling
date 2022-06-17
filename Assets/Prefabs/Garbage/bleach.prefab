@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 3473686036553235787}
   m_Layer: 0
   m_Name: bleach
-  m_TagString: Blue
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -274,7 +274,7 @@ Transform:
   m_GameObject: {fileID: 5840981777007758028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.3036, y: -3.341, z: -0.20911}
-  m_LocalScale: {x: 0.1083308, y: 0.1083308, z: 0.1083308}
+  m_LocalScale: {x: 0.07321645, y: 0.07321645, z: 0.07321645}
   m_Children:
   - {fileID: 533732349334052801}
   - {fileID: 1449018391790421585}
@@ -465,7 +465,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 6504470366992437366}
-  RightLight: {fileID: 1030333554226235246, guid: 183fb225e927a4743a169239c1d2ee3e, type: 3}
-  WrongLight: {fileID: 5667537243571328806, guid: e5999380a43f2a844a28ed2179c3f1be, type: 3}
+  RightLight: {fileID: 5667537243571328806, guid: e5999380a43f2a844a28ed2179c3f1be, type: 3}
+  WrongLight: {fileID: 1030333554226235246, guid: 183fb225e927a4743a169239c1d2ee3e, type: 3}
   NeutralLight: {fileID: 2164973671459122623, guid: 96fbd429767f1394cbb786e8117143d0, type: 3}
   Tag: Plastic
+  Right:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1030333554226235246, guid: 183fb225e927a4743a169239c1d2ee3e, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  Wrong:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5667537243571328806, guid: e5999380a43f2a844a28ed2179c3f1be, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
